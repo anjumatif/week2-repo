@@ -1,15 +1,23 @@
 console.log("Week2 Loop workshop");
 
-// for(let i=0; i <5; i++)
-// {
-//     console.log("Iteration",i);
-// }
-//  let counter=1;
-// while(counter <=5)
-// {
-//     console.log(`counter ${counter}`);
-//     counter++;
-// }
+for(let i=0; i <5; i++)
+{
+    console.log("Iteration",i);
+}
+ let counter=1;
+while(counter <=5)
+{
+    console.log(`counter ${counter}`);
+    counter++;
+}
+let keeplooping = false;
+let i=0;
+while(keeplooping === false)
+{
+    console.log("Iteration", i );
+    keeplooping = Math.random() < 0.1;
+    i++;
+}
 
 // let food= ["pizza","burger","chips","chocolates","pastries"];
 // for(let i=0;i < food.length; i++)
@@ -18,21 +26,21 @@ console.log("Week2 Loop workshop");
 // }
 
 const foods= ["pizza","burger","chips","chocolates","pastries"];
-// for(let food of foods )
-// {
-//     console.log(food);
-// }
-
-// const favouriteNumbers= [4,5,16,25,42, Infinity];
-// for(let number of favouriteNumbers){
-//     console.log(number);
-// }
-let food;
-foods.forEach(function(food)
+for(let food of foods )
 {
     console.log(food);
 }
-)
+
+const favouriteNumbers= [4,5,16,25,42, Infinity];
+for(let number of favouriteNumbers){
+    console.log(number);
+}
+
+foods.forEach(function(food,index)
+{
+    console.log(index,food);
+}
+);
 
 //forEach()
 // a method --> a javascript default function
